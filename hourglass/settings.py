@@ -78,6 +78,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+PAGINATION = 200
 
 try:
     from hourglass.local_settings import *

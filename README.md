@@ -27,4 +27,10 @@ From there, you're just a hop, skip and a jump away from your own dev server, us
 
 Currently the only endpoint is http://localhost:8000/api/rates/
 
+You can search for prices of specific labor categories by using the q parameter. For example:
+http://localhost:8000/api/rates/?q=accountant
+
+The default pagination is set to 200. You can paginate using the page parameter. For example:
+http://localhost:8000/api/rates/?q=translator&page=2
+
 More to come soon!
