@@ -30,6 +30,11 @@ Currently the only endpoint is http://localhost:8000/api/rates/
 You can search for prices of specific labor categories by using the q parameter. For example:
 http://localhost:8000/api/rates/?q=accountant
 
+You can also filter by the minimum education level, minimum years of experience, and maximum years of experience. For example:
+http://localhost:8000/api/rates/?min_education=MA&min_experience=5&max_experience=10&q=technical
+
+The valid values for min_education are AA (associates), BA (bachelors), MA (masters), and PHD (Ph.D).
+
 The default pagination is set to 200. You can paginate using the page parameter. For example:
 http://localhost:8000/api/rates/?q=translator&page=2
 
