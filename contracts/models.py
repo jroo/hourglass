@@ -16,6 +16,8 @@ class Contract(models.Model):
 
     idv_piid = models.CharField(max_length=128) #index this field
     piid = models.CharField(max_length=128) #index this field
+    contract_start = models.DateField(null=True, blank=True)
+    contract_end = models.DateField(null=True, blank=True)
     vendor_name = models.CharField(max_length=128)
     labor_category = models.TextField() #index this field
     education_level = models.CharField(choices=EDUCATION_CHOICES, max_length=5, null=True, blank=True)
@@ -46,6 +48,4 @@ class Contract(models.Model):
         return None
 
     def normalize_rate(self, rate):
-        t = float(rate.replace(',', ''))
-        print(t)
-        return t
+        return float(rate.replace(',', '').replace('$', ''))

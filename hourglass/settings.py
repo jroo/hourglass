@@ -40,6 +40,8 @@ INSTALLED_APPS = (
     'contracts',
     'api',
     'djorm_pgfulltext',
+    'rest_framework',
+
 )
 
 MIDDLEWARE_CLASSES = (
