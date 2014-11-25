@@ -1,0 +1,4 @@
+Django==1.7.1
+djangorestframework==2.4.4
+-e git+https://github.com/djangonauts/djorm-ext-pgfulltext.git#egg=djorm_ext_pgfulltext-master
+psycopg2==2.5.4
