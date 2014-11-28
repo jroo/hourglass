@@ -19,7 +19,7 @@ class Command(BaseCommand):
                     #create contract record, unique to vendor, labor cat
                     idv_piid = line[0]
                     vendor_name = line[3]
-                    labor_category = line[4]
+                    labor_category = line[4].strip().replace('\n', ' ')
                     
                     try:
                         contract = Contract.objects.get(idv_piid=idv_piid, labor_category=labor_category, vendor_name=vendor_name)
