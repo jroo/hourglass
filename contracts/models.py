@@ -5,9 +5,9 @@ from djorm_pgfulltext.fields import VectorField
 
 EDUCATION_CHOICES = (
     ('HS', 'High School'),
+    ('AA', 'Associates'),
     ('BA', 'Bachelors'),
     ('MA', 'Masters'),
-    ('AA', 'Associates'),
     ('PHD', 'Ph.D.'),
 )
 
